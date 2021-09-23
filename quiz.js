@@ -1,4 +1,4 @@
-/*hides welcome screen and displays question 1*/
+/*hides welcome screen and displays question 1, hides all the other questions*/
 function startQuiz() {
     document.getElementById("intro").style.display = "none";
     document.getElementById("question1").style.display = "block";
