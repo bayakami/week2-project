@@ -10,21 +10,23 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--css stylesheet-->
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>My Quiz</title>
 </head>
 
 <body>
+    
     <!--intro-->
     <div class="wrapper bg-white rounded">
-        <div class="content">
+        <div class="content" id="intro">
             <p class="text-muted">Welcome</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Which programming language are you?</p>
-        </div> <input type="submit" value="Start" class="mx-sm-0 mx-1">
+         <input type="submit" value="Start" class="mx-sm-0 mx-1" onclick="startQuiz()">
+        </div>
     </div>
 
     <!--question 1-->
     <div class="wrapper bg-white rounded">
-        <div class="content">
+        <div class="content" id="question1">
             <p class="text-muted">Question 1</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Pick a time to wake up</p>
             <div class="options py-3"> 
@@ -33,12 +35,13 @@
                 <label class="rounded p-2 option">10am<input type="radio" name="radio">
                 </label> 
             </div>
-        </div> <input type="submit" value="Next" class="mx-sm-0 mx-1">
+         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question2()">
+        </div>
     </div>
 
     <!--question 2-->
     <div class="wrapper bg-white rounded">
-        <div class="content">
+        <div class="content" id="question2">
             <p class="text-muted">Question 2</p>
             <p class="text-justify h5 pb-2 font-weight-bold">What is your favourite beverage?</p>
             <div class="options py-3"> 
@@ -47,12 +50,13 @@
                 <label class="rounded p-2 option">Coffee<input type="radio" name="radio">
                 </label>
             </div>
-        </div> <input type="submit" value="Next" class="mx-sm-0 mx-1">
+         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question3()">
+        </div>
     </div>
 
        <!--question 3-->
        <div class="wrapper bg-white rounded">
-        <div class="content">
+        <div class="content" id="question3">
             <p class="text-muted">Question 3</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Pick a colour</p>
             <div class="options py-3"> 
@@ -61,12 +65,13 @@
                 <label class="rounded p-2 option">white<input type="radio" name="radio">
                 </label>
             </div>
-        </div> <input type="submit" value="Next" class="mx-sm-0 mx-1">
+         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question4()">
+        </div>
     </div>
 
        <!--question 4-->
        <div class="wrapper bg-white rounded">
-        <div class="content">
+        <div class="content" id="question4">
             <p class="text-muted">Question 4</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Pick a celebrity</p>
             <div class="options py-3"> 
@@ -75,11 +80,13 @@
                 <label class="rounded p-2 option">Daniel Radcliffe<input type="radio" name="radio">
                 </label>
             </div>
-        </div> <input type="submit" value="Next" class="mx-sm-0 mx-1">
+         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question5()">
+        </div>
+    </div>
 
         <!--question 5-->
        <div class="wrapper bg-white rounded">
-        <div class="content">
+        <div class="content" id="question5">
             <p class="text-muted">Question 5</p>
             <p class="text-justify h5 pb-2 font-weight-bold">What is your favourite OS?</p>
             <div class="options py-3"> 
@@ -88,12 +95,11 @@
                 <label class="rounded p-2 option">Windows<input type="radio" name="radio">
                 </label>
             </div>
-        </div> <input type="submit" value="Results" class="mx-sm-0 mx-1">
+            <input type="submit" value="Results" class="mx-sm-0 mx-1" >
+        </div> 
     </div>
     <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
