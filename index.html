@@ -19,22 +19,49 @@
         <div class="content" id="intro">
             <p class="text-muted">Welcome</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Which programming language are you?</p>
-         <input type="submit" value="Start" class="mx-sm-0 mx-1" onclick="startQuiz()">
+            <input type="submit" value="Start" class="mx-sm-0 mx-1" onclick="startQuiz()">
         </div>
     </div>
+    <!--
+        <div id="question2">
+              <div class="row justify-content-center">
+                  <h2 class="text-center">Which of these do you do when you listen to music?</h2>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a1" value=1 />
+                <label for="a1" class="text-center">a) daydream (see things that go with the music) </label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=2 />
+                <label for="a2">b) hum along</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=3 />
+                <label for="a2">c) move with the music, tap your foot, etc.</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="button" value="Results"class="btn btn-success mx-auto" onclick="results()"/>
+              </div>
+            </div>
+    -->
 
     <!--question 1-->
     <div class="wrapper bg-white rounded">
         <div class="content" id="question1" style="display: none;">
             <p class="text-muted">Question 1</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Pick a time to wake up</p>
-            <div class="options py-3"> 
+            <div class="options py-3">
+                <input type="radio" name="quest1" id="a1" value=1 />
                 <label for="a1" class="rounded p-2 option">6am<input type="radio" name="radio"> </label>
-                <label for="a2" class="rounded p-2 option">8am<input type="radio" name="radio"> </label> 
-                <label for="a3" class="rounded p-2 option">10am<input type="radio" name="radio">
-                </label> 
+                <input type="radio" name="quest1" id="a2" value=2 />
+                <label for="a2" class="rounded p-2 option">8am<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest1" id="a3" value=3 />
+                <label for="a3" class="rounded p-2 option">10am<input type="radio" name="radio"> </label>
             </div>
-         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question2()">
+            <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question2()">
         </div>
     </div>
 
@@ -43,61 +70,74 @@
         <div class="content" id="question2" style="display: none;">
             <p class="text-muted">Question 2</p>
             <p class="text-justify h5 pb-2 font-weight-bold">What is your favourite beverage?</p>
-            <div class="options py-3"> 
-                <label class="rounded p-2 option">Beer<input type="radio" name="radio"> </label>
-                <label class="rounded p-2 option">Tea<input type="radio" name="radio"> </label> 
-                <label class="rounded p-2 option">Coffee<input type="radio" name="radio">
-                </label>
+            <div class="options py-3">
+                <input type="radio" name="quest2" id="a1" value=1 />
+                <label for="a1" class="rounded p-2 option">Beer<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest2" id="a2" value=2 />
+                <label for="a2" class="rounded p-2 option">Tea<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest2" id="a3" value=3 />
+                <label for="a3" class="rounded p-2 option">Coffee<input type="radio" name="radio"> </label>
             </div>
-         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question3()">
+            <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question3()">
         </div>
     </div>
 
-       <!--question 3-->
-       <div class="wrapper bg-white rounded">
+    <!--question 3-->
+    <div class="wrapper bg-white rounded">
         <div class="content" id="question3" style="display: none;">
             <p class="text-muted">Question 3</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Pick a colour</p>
-            <div class="options py-3"> 
-                <label class="rounded p-2 option">red<input type="radio" name="radio"> </label>
-                <label class="rounded p-2 option">blue<input type="radio" name="radio"> </label> 
-                <label class="rounded p-2 option">white<input type="radio" name="radio">
+            <div class="options py-3">
+                <input type="radio" name="quest3" id="a1" value=1 />
+                <label for="a1" class="rounded p-2 option">red<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest3" id="a2" value=2 />
+                <label for="a2" class="rounded p-2 option">blue<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest3" id="a3" value=3 />
+                <label for="a3" class="rounded p-2 option">white<input type="radio" name="radio">
                 </label>
             </div>
-         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question4()">
+            <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question4()">
         </div>
     </div>
 
-       <!--question 4-->
-       <div class="wrapper bg-white rounded">
+    <!--question 4-->
+    <div class="wrapper bg-white rounded">
         <div class="content" id="question4" style="display: none;">
             <p class="text-muted">Question 4</p>
             <p class="text-justify h5 pb-2 font-weight-bold">Pick a celebrity</p>
-            <div class="options py-3"> 
-                <label class="rounded p-2 option">Beyonce<input type="radio" name="radio"> </label>
-                <label class="rounded p-2 option">Bruce Willis<input type="radio" name="radio"> </label> 
-                <label class="rounded p-2 option">Daniel Radcliffe<input type="radio" name="radio">
+            <div class="options py-3">
+                <input type="radio" name="quest4" id="a1" value=1 />
+                <label for="a1" class="rounded p-2 option">Beyonce<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest4" id="a2" value=2 />
+                <label for="a2" class="rounded p-2 option">Bruce Willis<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest4" id="a3" value=3 />
+                <label for="a3" class="rounded p-2 option">Daniel Radcliffe<input type="radio" name="radio">
                 </label>
             </div>
-         <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question5()">
+            <input type="submit" value="Next" class="mx-sm-0 mx-1" onclick="question5()">
         </div>
     </div>
 
-        <!--question 5-->
-       <div class="wrapper bg-white rounded">
+    <!--question 5-->
+    <div class="wrapper bg-white rounded">
         <div class="content" id="question5" style="display: none;">
             <p class="text-muted">Question 5</p>
             <p class="text-justify h5 pb-2 font-weight-bold">What is your favourite OS?</p>
-            <div class="options py-3"> 
-                <label class="rounded p-2 option">Linux<input type="radio" name="radio"> </label>
-                <label class="rounded p-2 option">Mac<input type="radio" name="radio"> </label> 
-                <label class="rounded p-2 option">Windows<input type="radio" name="radio">
+            <div class="options py-3">
+                <input type="radio" name="quest5" id="a1" value=1 />
+                <label for="a1" class="rounded p-2 option">Linux<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest5" id="a2" value=2 />
+                <label for="a2" class="rounded p-2 option">Mac<input type="radio" name="radio"> </label>
+                <input type="radio" name="quest5" id="a3" value=3 />
+                <label for="a3" class="rounded p-2 option">Windows<input type="radio" name="radio">
                 </label>
             </div>
-            <input type="submit" value="Results" class="mx-sm-0 mx-1" >
-        </div> 
+            <input type="submit" value="Results" class="mx-sm-0 mx-1" onclick="results()">
+        </div>
     </div>
-    <!--bootstrap-->
+    <div id="results"></div>
+    <div id="score"></div>
+    <!--javascript-->
     <script src="quiz.js"></script>
 </body>
 
