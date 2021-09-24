@@ -20,6 +20,25 @@ a:hover {
     text-decoration: none
 }
 
+/*hide radio buttons*/
+#a1 {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#a2 {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#a3 {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 
 p.text-muted {

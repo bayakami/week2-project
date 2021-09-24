@@ -35,16 +35,37 @@ function startQuiz() {
     document.getElementById("results").style.display = "block";
   }
 
-
+/*score calculation*/
 function calcResults(){;
     var score = 0;
     var ele = document.getElementsByTagName("radio");
-    var result = document.getElementById("results");
+    //var result = document.getElementById("results");
       for(i = 0; i < ele.length; i++) { 
                 if(ele[i].checked)             
                 score+=parseInt(ele[i].value)
       }
     
+     /* switch(score) {
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+          message = "PERL";
+          break;
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+          message = "JAVA";
+          break;
+        case 13:
+        case 14:
+        case 15:
+          message = "PYTHON"
+          break;
+       
+      }*/
+
 
   if (score<=8) {
     message = "PERL <br>Your best days may be behind you, but you you've still got it. Once you make a friend they are friends for life.   You are unpredictable, but those who know you best are used to it."
@@ -55,4 +76,5 @@ function calcResults(){;
 }
 
 document.getElementById("score").innerHTML = message
+return score;
 }
