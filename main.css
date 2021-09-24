@@ -3,7 +3,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: #eee
-    
 }
 
 .wrapper {
@@ -21,25 +20,11 @@ a:hover {
 }
 
 /*hide radio buttons*/
-#a1 {
+#a1,#a2,#a3 {
     position: fixed;
     opacity: 0;
     pointer-events: none;
 }
-
-#a2 {
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;
-}
-
-#a3 {
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;
-}
-
-
 
 p.text-muted {
     font-size: 14px;
